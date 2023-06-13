@@ -2,16 +2,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 20px; /*da togliere*/
+    border: 1px dashed red;/*da togliere*/
 }
 :root{
     --azzurro: #0084FD;
     --viola: #9792E4;
+    --paddinginline: 0.5rem;
 
 }
+.section{
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 200px;
+    justify-content: space-around;
+}
+.s{
+    flex-basis: calc(100%/3);
+}
+.m{}
+.l{
+    flex-basis: calc((100% /3)*2);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    padding: 2px var(--paddinginline);
+    border: 0px;
+}
+
+/******************** top nav ********************/
 .top-nav{
     background-color:var(--azzurro);
     display: flex;
     justify-content: space-between;
     width: 100%;
     line-height: 40px;
+    padding: var(--paddinginline);
+    
+}
+.top-nav a, .top-nav span{
+    color: white;
+}
+.top-nav a{
+    text-decoration: none;
+    margin: 0 var(--paddinginline);
+}
+.top-nav button{
+    border-radius: 20px;
+
+}
+/*  bottone invisibile da riattivare
+.hide{
+    display: none;
+}*/
+
+/******************** main ********************/
+
+.section.n1{
+    background-color: white;
+    /*min-width: 850px;
+    max-width: 1300px;*/
+}
+
+
+                /******************** da spostare ***********************/
+.section.n1 .card{
+    background-color: #B5DDFF;
+    border-radius: 18px;
+}
+
+.section.n1 .card.l{
+    flex-direction: row;
+}
+.section.n1 .card.l button{
+    background-color: var(--azzurro);
+    border-radius: 15px;
+    margin-right: auto;
 }
