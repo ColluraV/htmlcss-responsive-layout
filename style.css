@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azzurro: #0084FD;
+    --viola: #9792E4;
+
+}
+.top-nav{
+    background-color:var(--azzurro);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 40px;
+}
