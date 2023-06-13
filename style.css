@@ -13,30 +13,55 @@
 
 }
 .section{
-    width: 100%;
+    /*width: 100%;*/
 }
 .card{
     display: flex;
     flex-direction: column;
     flex-basis: 0;
     flex-grow: 1;
-    min-width: 200px;
-    justify-content: space-around;
+
 }
 .s{
-    flex-basis: calc(100%/3);
+    flex-basis: calc(100% /3);
+    max-width: 350px;
+}
+.card.s{
+    min-width: 250px;
+    margin: 1rem;
+    justify-content: space-between;
 }
 .m{}
 .l{
+    justify-content: center;
     flex-basis: calc((100% /3)*2);
+    max-width: calc(700px + 2rem);
+    margin: 1rem;
+
 }
 .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    margin: var(--paddinginline) auto;
 }
 button{
     padding: 2px var(--paddinginline);
     border: 0px;
+}
+.card h4, .card p , .card span{
+    padding: 1rem var(--paddinginline);
+
+}
+.card span{
+    margin: 0 auto;
+}
+.card.s h4{
+    text-align: center;
+}
+.card.l h4{
+    text-align: left;
 }
 
 /******************** top nav ********************/
@@ -60,6 +85,9 @@ button{
     border-radius: 20px;
 
 }
+
+
+
 /*  bottone invisibile da riattivare
 .hide{
     display: none;
@@ -82,9 +110,26 @@ button{
 
 .section.n1 .card.l{
     flex-direction: row;
+    /*min-width: 400px;*/
 }
 .section.n1 .card.l button{
     background-color: var(--azzurro);
     border-radius: 15px;
     margin-right: auto;
+}
+.card.s img{
+    width: 250px;
+    padding-top: auto;
+    padding-right: auto;
+
+}
+.card .img{
+    margin-bottom: - var(--paddinginline);
+}
+.section.n1 .card.s h4{
+    color: var(--azzurro);
+}
+.card.s span i{
+    font-size: 70px;
+    color: var(--azzurro);
 }
