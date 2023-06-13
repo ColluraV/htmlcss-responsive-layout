@@ -6,6 +6,8 @@
     min-height: 20px; /*da togliere*/
     border: 1px dashed red;/*da togliere*/
 }
+
+
 :root{
     --azzurro: #0084FD;
     --viola: #9792E4;
@@ -13,7 +15,7 @@
 
 }
 .section{
-    /*width: 100%;*/
+    width: 100%;
 }
 .card{
     display: flex;
@@ -31,7 +33,9 @@
     margin: 1rem;
     justify-content: space-between;
 }
-.m{}
+.m{
+    min-width: 570px;
+}
 .l{
     justify-content: center;
     flex-basis: calc((100% /3)*2);
@@ -43,7 +47,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1400px;
+    max-width: 1150px;
     margin: var(--paddinginline) auto;
 }
 button{
@@ -133,3 +137,41 @@ button{
     font-size: 70px;
     color: var(--azzurro);
 }
+                /******************** section 2 ***********************/
+.section.n2{
+    background-color: var(--viola);
+    padding-top: 5rem;
+}
+
+.jumbol{
+    width: 50%;
+    margin:25px;
+    align-content:last baseline;
+    margin-left: auto;
+    color: white;
+}
+img.jumbor{
+    width: 200px;
+}
+.jumbor{
+    margin:var(--paddinginline) 25px;
+    align-content:last baseline;
+}
+#jumbor{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+}
+button.jumbor {
+    background-color: var(--viola);
+    font-size: 1.5rem;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+                /******************** section 3 ***********************/
+
