@@ -157,7 +157,7 @@ img.jumbor{
     margin:var(--paddinginline) 25px;
     align-content:last baseline;
 }
-#jumbor{
+.special{
     width: 50%;
     margin-top: auto;
     margin-bottom: 25px;
@@ -228,7 +228,7 @@ section.n3 .container , .container .testimonial{
     margin-bottom: 50px;
 }
 
-                /******************** section 3 ***********************/
+                /******************** section 4 ***********************/
 .section.n4 .banner h2{
     color: white;
     font-weight: 600;
@@ -261,5 +261,11 @@ section.n3 .container , .container .testimonial{
     font-size: 50px;
     padding: 0.5rem 1.5rem;
 }
+                /******************** section 5 ***********************/
 
-
+.helper{
+border-radius: 50%;
+}
+.section.n5 .container .special{
+    margin-top:25px;
+}
