@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    /*border: 1px dashed red;*/
 }
-
 
 :root {
     --azzurro: #0084FD;
@@ -26,6 +25,7 @@
 .grow {
     flex-basis: 0;
     flex-grow: 1;
+    width: 100%;
 }
 
 .s {
@@ -50,8 +50,9 @@
     flex-basis: calc((95% /3)*2);
     max-width: calc(700px + 2rem);
     background-color: #0084FD;
-    min-width: 320px;
+    min-width: 280px;
     margin: auto 1rem;
+    padding: 0 1rem;
 }
 
 .xl {
@@ -65,7 +66,8 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1250px;
-    margin: var(--paddinginline) auto;
+    margin: 0 auto;
+    margin-top: var(--paddinginline);
 }
 
 button {
@@ -132,7 +134,12 @@ button {
 .logo img {
     display: block;
 }
+.button{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
 
+}
 
 
 /******************** main ********************/
@@ -159,7 +166,7 @@ button {
     margin-right: auto;
 }
 
-.card img {
+.section.n1 .card img {
     width: 250px;
     padding-top: auto;
     padding-right: auto;
@@ -218,7 +225,7 @@ img.jumbor {
     background-color: white;
     border-radius: 50px;
     max-width: 350px;
-    min-width: 300px;
+    min-width: 280px;
 
 }
 
@@ -463,10 +470,6 @@ footer {
         padding: 0;
         max-width: calc(40% + 2rem);
     }
-    .l .card.s{
-    
-    }
-
     .card.s img {
         padding-right: 0;
     }
@@ -499,6 +502,17 @@ footer {
         width: 70%;
         margin: 1rem;
     }
+    
+.section.n1 .l .card button{
+    margin: auto auto;
+} 
+.section.n1 .l .img{
+    margin: auto;
+}
+.section.n1 .l .card h4, .section.n1 .l .card p{
+    text-align: center;
+}
+
 }
 
 @media screen and (max-width:900px) {
@@ -507,25 +521,25 @@ footer {
      display: inline-block;
     }
 
-header nav .button a,
-  header nav .button button {
+.reveal {
     display: none;
     }
 
-header nav .button .hide:focus{
-    header nav .button a {
-      display: inline-block;
-      }  
+.button:hover .reveal{
+       display: inline-block;
+      } 
+
 }
-}
+
 
 @media screen and (max-width:660px) {
     .section.n1 .container .card {
         width: 100%;
     }
+
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:490px) {
     .section.n3 .container .xl .user {
         flex-direction: column;
     }
@@ -535,8 +549,12 @@ header nav .button .hide:focus{
     }
 
     .section.n1 .container .card.s{
-        min-width: 320px;
+        min-width: 280px;
         max-width: none;
        }
 
+}
+
+button:hover{
+    background-color: rgb(212, 168, 114);
 }
