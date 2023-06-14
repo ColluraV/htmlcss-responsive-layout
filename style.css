@@ -1,169 +1,211 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 1px dashed red;/*da togliere*/
 }
 
 
-:root{
+:root {
     --azzurro: #0084FD;
     --viola: #9792E4;
     --paddinginline: 0.5rem;
 
 }
-.section{
-    width: 100%;
-    padding: 1rem;
-}
-.card{
-       display: flex;
-    flex-direction: column; 
-}
-.grow{
 
+.section {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.grow {
     flex-basis: 0;
     flex-grow: 1;
-
 }
-.s{
+
+.s {
     flex-basis: calc(100% /3);
     max-width: 350px;
 }
-.card.s{
-    min-width: 300px;
+
+.card.s {
+    min-width: 200px;
     margin: 1rem;
     justify-content: space-between;
 }
-.m{
+
+.m {
     min-width: 350px;
 }
-.l{
+
+.l {
     justify-content: center;
     flex-basis: calc((100% /3)*2);
     max-width: calc(700px + 2rem);
     margin: 1rem;
 }
-.xl{
-    width: 100%;
+
+.xl {
+
     margin: var(--paddinginline) 0px;
 
 }
-.container{
+
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1250px;
     margin: var(--paddinginline) auto;
 }
-button{
+
+button {
     padding: 2px var(--paddinginline);
     border: 0px;
 }
-.card h4, .card p , .card span{
+
+.card h4,
+.card p,
+.card span {
     padding: 1rem var(--paddinginline);
 
 }
-.card span{
+
+.card span {
     margin: 0 auto;
 }
-.card.s h4{
+
+.card.s h4 {
     text-align: center;
 }
-.card.l h4{
+
+.card.l h4 {
     text-align: left;
 }
 
+.hide {
+    display: none;
+}
+
 /******************** top nav ********************/
-.top-nav{
-    background-color:var(--azzurro);
+.top-nav>* {
+    font-size: 1.2rem;
+}
+
+.top-nav {
+    background-color: var(--azzurro);
     display: flex;
     justify-content: space-between;
     width: 100%;
-    line-height: 40px;
+    line-height: 43px;
     padding: var(--paddinginline);
-    
 }
-.top-nav a, .top-nav span{
+
+.top-nav a,
+.top-nav span {
     color: white;
 }
-.top-nav a{
+
+.top-nav a {
     text-decoration: none;
     margin: 0 var(--paddinginline);
 }
-.top-nav button{
-    border-radius: 20px;
 
+.top-nav button {
+    border-radius: 20px;
+    font-size: 1.1rem;
 }
 
-/*  bottone invisibile da riattivare
-.hide{
-    display: none;
-}*/
+.logo {
+    vertical-align: middle;
+}
+
+.logo img {
+    display: block;
+}
+
+
 
 /******************** main ********************/
 
-.section.n1{
+.section.n1 {
     background-color: white;
 }
 
-.section.n1 .card{
+.section.n1 .card {
     background-color: #B5DDFF;
     border-radius: 18px;
 }
 
-.section.n1 .card.l{
+.section.n1 .card.l {
     flex-direction: row;
 }
-.section.n1 .card.l button{
+
+.section.n1 .card.l button {
     background-color: var(--azzurro);
     border-radius: 15px;
     margin-right: auto;
 }
-.card.s img{
+
+.card.s img {
     width: 250px;
     padding-top: auto;
     padding-right: auto;
 }
-.card .img{
+
+.card .img {
     margin-bottom: - var(--paddinginline);
 }
-.section.n1 .card.s h4{
+
+.section.n1 .card.s h4 {
     color: var(--azzurro);
 }
-.card.s span i{
+
+.card.s span i {
     font-size: 70px;
     color: var(--azzurro);
 }
-                /******************** section 2 ***********************/
-.section.n2{
+
+/******************** section 2 ***********************/
+.section.n2 {
     background-color: var(--viola);
     padding-top: 5rem;
 }
 
-.jumbol{
+.jumbol {
     width: 50%;
-    margin:25px;
-    align-content:last baseline;
+    margin: 25px;
+    align-content: last baseline;
     margin-left: auto;
     color: white;
+    min-width: 280px;
 }
-img.jumbor{
+
+img.jumbor {
     width: 200px;
 }
-.jumbor{
-    margin:var(--paddinginline) 25px;
-    align-content:last baseline;
+
+.jumbor {
+    margin: var(--paddinginline) 25px;
+    align-content: last baseline;
 }
-.special{
+
+.special {
     width: 50%;
     margin-top: auto;
     margin-bottom: 25px;
     text-align: center;
     background-color: white;
     border-radius: 50px;
+    max-width: 350px;
+    min-width: 300px;
+
 }
+
 .section.n2 .container .special button {
     background-color: var(--viola);
     font-size: 1.5rem;
@@ -172,9 +214,10 @@ img.jumbor{
     border-radius: 50%;
 }
 
-                /******************** section 3 ***********************/
+/******************** section 3 ***********************/
 
-section.n3 .container , .container .testimonial{
+section.n3 .container,
+.container .testimonial {
     flex-direction: column;
 }
 
@@ -183,72 +226,86 @@ section.n3 .container , .container .testimonial{
     flex-wrap: wrap;
     align-items: center;
 }*/
-.user  img{
-    width: 20%;
-    aspect-ratio: 1 / 1;
+.user img {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    padding: 2rem;
-    min-width: 200px;
-}
-.container.testimonial{
-    width: 80%;
-    padding: 2rem;
+    padding: 1rem;
+    flex-grow: 0;
+
 }
 
-.banner h2, .banner p, .banner span{
-   margin: var(--paddinginline);
+.container.testimonial {
+    width: 70%;
+
 }
 
-.banner{
+.banner h2,
+.banner p,
+.banner span {
+    margin: var(--paddinginline);
+}
+
+.banner {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.banner h2{
+
+.banner h2 {
     color: var(--viola);
 }
 
-.nome{
+.nome {
     font-weight: 600;
 }
-.user{
+
+.user {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     color: white;
     background-color: var(--viola);
     border-radius: 40px;
+    justify-content: center;
 }
-.container.testimonial p{
+
+.container.testimonial p {
     padding: var(--paddinginline) 1rem;
 }
-.section.n3{
+
+.section.n3 {
     margin-bottom: 50px;
 }
 
-                /******************** section 4 ***********************/
-.section.n4 .banner h2{
+/******************** section 4 ***********************/
+.section.n4 .banner h2 {
     color: white;
     font-weight: 600;
 }
-.section.n4 .container .card.s  h4, .section.n4 .container .card.s  p {
+
+.section.n4 .container .card.s h4,
+.section.n4 .container .card.s p {
     padding: 1.5rem 1.5rem;
 }
-.section.n4 .container h4{
+
+.section.n4 .container h4 {
     text-align: left;
-    font-size:larger;
+    font-size: larger;
 }
+
 .section.n4 .container .card.s {
     background-color: white;
     color: var(--viola);
     border-radius: 20px;
 }
-.section.n4{
+
+.section.n4 {
     background-color: var(--viola);
 }
-.section.n4 .card.s button{
-    padding: 0px  0px;
+
+.section.n4 .card.s button {
+    padding: 0px 0px;
     width: 130px;
     line-height: 2.5rem;
     margin: 1.5rem;
@@ -256,101 +313,204 @@ section.n3 .container , .container .testimonial{
     border-radius: 20px;
     color: white;
 }
-.section.n4 .card.s h1{
+
+.section.n4 .card.s h1 {
     font-size: 50px;
     padding: 0.5rem 1.5rem;
 }
-                /******************** section 5 ***********************/
 
-.helper{
-border-radius: 50%;
+/******************** section 5 ***********************/
+
+.helper {
+    border-radius: 50%;
 }
-.section.n5 .container{
+
+.section.n5 .container {
     justify-content: space-around;
 }
-.section.n5 .container .special{
+
+.section.n5 .container .special {
     margin: 0 0;
     width: 300px;
 }
-.left{
+
+.left {
     width: 73%;
     min-width: none;
 }
-.left h1, .left p{
+
+.left h1,
+.left p {
     padding: 4rem;
 }
-.section.n5 .container h1{
+
+.section.n5 .container h1 {
     font-size: 35px;
     color: var(--viola);
 }
-.section.n5 .container .special button{
+
+.section.n5 .container .special button {
     background-color: var(--viola);
     color: white;
     border-radius: 15px;
     font-size: 1.1rem;
     padding: 0.5rem;
 }
-.section.n5 .container .special p{
+
+.section.n5 .container .special p {
     text-align: left;
     color: var(--viola);
     font-weight: bold;
 }
-.relative i{
+
+.relative i {
     position: absolute;
     top: 10%;
     right: 10%;
     color: var(--viola);
     font-size: 60px;
 }
-.relative{
+
+.relative {
     position: relative;
 }
 
-                /******************** section 6 ***********************/
-.section.n6{
+/******************** section 6 ***********************/
+.section.n6 {
     background-color: var(--viola);
 }
 
-.section.n6 .banner{
+.section.n6 .banner {
     min-width: 320px;
     max-width: 500px;
 }
-.section.n6 .banner h2{
+
+.section.n6 .banner h2 {
     color: white;
 }
+
 .section.n6 .banner h1 {
     font-size: 50px;
     color: yellow;
 }
-.section.n6 .container .banner > *{
-    padding:var(--paddinginline)
+
+.section.n6 .container .banner>* {
+    padding: var(--paddinginline)
 }
-.section.n6 span, .section.n6 p{
+
+.section.n6 span,
+.section.n6 p {
     color: white;
 }
-.section.n6 .banner span i{
+
+.section.n6 .banner span i {
     font-size: 8px;
 }
-.section.n6 button{
+
+.section.n6 button {
     border-radius: 20px;
     color: var(--viola);
     width: 150px;
-    font-size: 1.1rem;    
+    font-size: 1.1rem;
 }
-                /******************** footer ***********************/
-footer{
+
+/******************** footer ***********************/
+footer {
     background-color: rgb(33, 33, 33);
     height: 300px;
 }
-.footer{
+
+.footer {
     display: flex;
     flex-direction: column;
-    justify-content:space-around ;
+    justify-content: space-around;
     height: 100%;
 }
-.footer p{
+
+.footer p {
     color: white;
     width: 500px;
     margin: auto;
     text-align: center;
+}
+
+
+
+@media screen and (max-width:1150px) {
+    .container {
+        width: 100%;
+    }
+
+    .section.n1 .card.l {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        max-width: calc(40% + 2rem);
+    }
+
+    .card.s img {
+        padding-right: 0;
+    }
+
+    .section.n1 .class. .card.s {
+        max-width: 180px;
+    }
+
+    .section.n2 .container {
+        flex-direction: column;
+    }
+
+    .jumbol {
+        width: 80%;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .section.n2 .container .card .special {
+        width: 90%;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    img.jumbor {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+.hide {
+     display: inline-block;
+    }
+
+header nav .button a,
+  header nav .button button {
+    display: none;
+    }
+
+header nav .button .hide:focus{
+    header nav .button a {
+      display: inline-block;
+      }  
+}
+}
+
+@media screen and (max-width:660px) {
+    .section.n1 .container .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .section.n3 .container .xl .user {
+        flex-direction: column;
+    }
+
+    .section.n3 .container .xl .user img {
+        margin: auto;
+    }
 }
