@@ -35,7 +35,7 @@
 }
 
 .card.s {
-    margin:  1rem ;
+    margin: 1rem;
     justify-content: space-between;
 }
 
@@ -98,6 +98,16 @@ button {
     display: none;
 }
 
+header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* #hidden-bar {
+    background-color:  #B5DDFF;
+  }*/
 /******************** top nav ********************/
 .top-nav>* {
     font-size: 1.2rem;
@@ -134,7 +144,8 @@ button {
 .logo img {
     display: block;
 }
-.button{
+
+.button {
     display: flex;
     flex-direction: column-reverse;
     align-items: end;
@@ -143,12 +154,16 @@ button {
 
 
 /******************** main ********************/
+main {
+    margin-top: 120px;
+}
 
 .section.n1 {
     background-color: white;
 }
 
-.section.n1 .card, .section.n1 .l {
+.section.n1 .card,
+.section.n1 .l {
     background-color: #B5DDFF;
     border-radius: 18px;
 
@@ -184,6 +199,7 @@ button {
     font-size: 70px;
     color: var(--azzurro);
 }
+
 .section.n1 .container .l .card img {
     margin: 0px;
     display: block;
@@ -470,6 +486,7 @@ footer {
         padding: 0;
         max-width: calc(40% + 2rem);
     }
+
     .card.s img {
         padding-right: 0;
     }
@@ -503,31 +520,36 @@ footer {
         margin: 1rem;
     }
     
-.section.n1 .l .card button{
-    margin: auto auto;
-} 
-.section.n1 .l .img{
-    margin: auto;
-}
-.section.n1 .l .card h4, .section.n1 .l .card p{
-    text-align: center;
-}
+    .section.n1 .l .card button {
+        margin: auto auto;
+    }
 
+    .section.n1 .l .img {
+        margin: auto;
+    }
+
+    .section.n1 .l .card h4,
+    .section.n1 .l .card p {
+        text-align: center;
+    }
+    .section.n4 .container .card.s{
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:900px) {
 
-.hide {
-     display: inline-block;
+    .hide {
+        display: inline-block;
     }
 
-.reveal {
-    display: none;
+    .reveal {
+        display: none;
     }
 
-.button:hover .reveal{
-       display: inline-block;
-      } 
+    .button:hover .reveal {
+        display: inline-block;
+    }
 
 }
 
@@ -548,13 +570,13 @@ footer {
         margin: auto;
     }
 
-    .section.n1 .container .card.s{
+    .section.n1 .container .card.s {
         min-width: 280px;
         max-width: none;
-       }
+    }
 
 }
 
-button:hover{
+button:hover {
     background-color: rgb(212, 168, 114);
 }
