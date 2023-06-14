@@ -31,7 +31,7 @@
 .s {
     flex-basis: calc(80% /3);
     max-width: 320px;
-    min-width: 200px;
+    min-width: 290px;
 }
 
 .card.s {
@@ -532,9 +532,6 @@ footer {
     .section.n1 .l .card p {
         text-align: center;
     }
-    .section.n4 .container .card.s{
-
-    }
 }
 
 @media screen and (max-width:900px) {
@@ -558,7 +555,11 @@ footer {
     .section.n1 .container .card {
         width: 100%;
     }
-
+    .s{
+        min-width: none;
+        max-width: none;
+        padding: 0 var(--paddinginline);
+    }
 }
 
 @media screen and (max-width:490px) {
