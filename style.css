@@ -535,10 +535,8 @@ header nav .button .hide:focus{
     }
 
     .section.n1 .container .card.s{
-        width: 90%;
+        min-width: 320px;
         max-width: none;
-        /*flex-basis: 0;
-        flex-grow: 1;*/
-    }
+       }
 
 }
