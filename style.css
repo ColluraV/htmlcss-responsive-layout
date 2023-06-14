@@ -491,8 +491,8 @@ footer {
         padding-right: 0;
     }
 
-    .section.n1 .class. .card.s {
-        max-width: 180px;
+    .section.n4 .container .card.s {
+        align-items: center;
     }
 
     .section.n2 .container {
@@ -533,7 +533,7 @@ footer {
         text-align: center;
     }
     .section.n4 .container .card.s{
-        align-items: center;
+
     }
 }
 
